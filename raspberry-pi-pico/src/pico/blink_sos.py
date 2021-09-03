@@ -5,16 +5,16 @@ led = Pin(25, Pin.OUT)
 
 
 def signal_short():
-    utime.sleep(0.25)
+    utime.sleep_ms(250)
     led.high()
-    utime.sleep(0.25)
+    utime.sleep_ms(250)
     led.low()
 
 
 def signal_long():
-    utime.sleep(0.5)
+    utime.sleep_ms(500)
     led.high()
-    utime.sleep(0.5)
+    utime.sleep_ms(500)
     led.low()
 
 
@@ -32,4 +32,4 @@ while True:
     signal_s()
     signal_o()
     signal_s()
-    utime.sleep(1)
+    utime.sleep_ms(1000)
