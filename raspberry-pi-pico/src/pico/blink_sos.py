@@ -1,7 +1,9 @@
 from machine import Pin
 import utime
 
-led = Pin(25, Pin.OUT)
+ONBOARD_LED_PIN = 25
+
+led = Pin(ONBOARD_LED_PIN, Pin.OUT)
 
 
 def signal_short():
